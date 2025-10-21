@@ -12,21 +12,25 @@ set background=light
 
 " This theme depends on termguicolors being set.
 
-let s:palette = {
-\ 'active':    '#ffffff',
-\ 'bg':        '#fffcf5',
-\ 'fg':        '#000000',
-\ 'magenta':   '#ffe8fb',
-\ 'yellow':    '#fdf4cc',
-\ 'red':       '#ffe4e2',
-\ 'orange':    '#fcdede',
-\ 'blue':      '#def2fa',
-\ 'green':     '#c8f9b0',
+" Colors taken from Scapple... 
 
-\ 'cyan':      '#dbecb6',
-\ 'darkgreen': '#dbecb6',
-\ 'darkblue':  '#000090',
-\}
+let s:palette = {}
+
+let s:palette.active    = '#e16500' " Dark orange from selected item in scapple
+let s:palette.bg        = '#fffdf5' " Yellowish
+let s:palette.fg        = '#000000' " Black
+
+let s:palette.magenta   = '#fedbff' " Pink Bubble
+let s:palette.yellow    = '#faedaf' " Yellow Bubble
+let s:palette.red       = '#ffd4d4' " Red Bubble
+let s:palette.orange    = '#ffc78a' " Orange, not originally in Scapple, but fits.
+let s:palette.blue      = '#c8ebfe' " Blue Bubble
+let s:palette.green     = '#c8f9b0' " Green Bubble
+
+let s:palette.visual    = '#ffd8b3' "Orangy, default select color for text
+
+let s:palette.darkgreen = '#dbecb6'
+let s:palette.darkblue  = '#000090'
 
 " Editor
 execute "hi Normal"       "guifg=".s:palette.fg     "guibg=".s:palette.bg
@@ -46,7 +50,7 @@ execute "hi VertSplit"   "guifg=NONE"  "guibg=".s:palette.magenta
 execute "hi ColorColumn" "guifg=NONE"  "guibg=".s:palette.magenta
 execute "hi TabLine"     "guifg=NONE"  "guibg=".s:palette.magenta
 execute "hi TabLineFill" "guifg=NONE"  "guibg=".s:palette.magenta
-execute "hi TabLineSel"  "guifg=NONE"  "guibg=".s:palette.cyan
+execute "hi TabLineSel"  "guifg=NONE"  "guibg=".s:palette.visual
 
 " File Navigation / Searching
 execute "hi Directory"   "guifg=NONE" "guibg=NONE"
@@ -63,18 +67,18 @@ execute "hi ModeMsg"      "guifg=NONE" "guibg=NONE"
 execute "hi MoreMsg"      "guifg=NONE" "guibg=NONE"
 
 " Visual aid
-execute "hi MatchParen"  "guifg=NONE" "guibg=".s:palette.blue
-execute "hi Visual"      "guifg=NONE" "guibg=".s:palette.cyan
-execute "hi VisualNOS"   "guifg=NONE" "guibg=".s:palette.cyan
-execute "hi NonText"     "guifg=NONE" "guibg=NONE"
+execute "hi MatchParen"  "guifg=white" "guibg=".s:palette.active
+execute "hi Visual"      "guifg=NONE"  "guibg=".s:palette.visual
+execute "hi VisualNOS"   "guifg=NONE"  "guibg=".s:palette.visual
+execute "hi NonText"     "guifg=NONE"  "guibg=NONE"
 
-execute "hi Todo"        "guifg=NONE"      "guibg=".s:palette.yellow
-execute "hi Underlined"  "guifg=NONE"      "guibg=NONE"
+execute "hi Todo"        "guifg=NONE"          "guibg=".s:palette.yellow
+execute "hi Underlined"  "guifg=NONE"          "guibg=NONE"
 execute "hi Error"       "guifg=".s:palette.fg "guibg=".s:palette.red
 execute "hi ErrorMsg"    "guifg=".s:palette.fg "guibg=".s:palette.red
 execute "hi WarningMsg"  "guifg=".s:palette.fg "guibg=".s:palette.yellow
-execute "hi Ignore"      "guifg=NONE"      "guibg=NONE"
-execute "hi SpecialKey"  "guifg=NONE"      "guibg=NONE"
+execute "hi Ignore"      "guifg=NONE"          "guibg=NONE"
+execute "hi SpecialKey"  "guifg=NONE"          "guibg=NONE"
 
 " Variable types
 execute "hi Constant"        "guifg=NONE" "guibg=NONE"
@@ -102,10 +106,10 @@ execute "hi Comment"         "guifg=NONE" "guibg=".s:palette.yellow
 execute "hi Special"         "guifg=NONE" "guibg=".s:palette.darkgreen
 execute "hi SpecialChar"     "guifg=NONE" "guibg=".s:palette.darkgreen
 
-execute "hi Tag"             "guifg=NONE" "guibg=NONE"
+execute "hi Tag"             "guifg=NONE"                "guibg=NONE"
 execute "hi Delimiter"       "guifg=".s:palette.darkblue "guibg=NONE"
-execute "hi SpecialComment"  "guifg=NONE" "guibg=NONE"
-execute "hi Debug"           "guifg=NONE" "guibg=NONE"
+execute "hi SpecialComment"  "guifg=NONE"                "guibg=NONE"
+execute "hi Debug"           "guifg=NONE"                "guibg=NONE"
 
 " C like
 execute "hi PreProc"         "guifg=NONE" "guibg=NONE"
