@@ -1,6 +1,6 @@
 " Name: Highlight Scapple Colorscheme 
 " Author: mmzeeman (on Github)
-" URL: https://github.com/mmzeeman/git-highlight
+" URL: https://github.com/mmzeeman/vim-highlight
 " (see this url for latest release & screenshots)
 " License: OSI approved MIT license
 
