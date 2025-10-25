@@ -1,5 +1,8 @@
-
-
+" Name: Highlight Scapple Colorscheme 
+" Author: mmzeeman (on Github)
+" URL: https://github.com/mmzeeman/git-highlight
+" (see this url for latest release & screenshots)
+" License: OSI approved MIT license
 
 hi clear
 if exists("syntax_on")
@@ -26,10 +29,10 @@ let s:palette.red       = '#ffd4d4' " Red Bubble
 let s:palette.orange    = '#ffc78a' " Orange, not originally in Scapple, but fits.
 let s:palette.blue      = '#c8ebfe' " Blue Bubble
 let s:palette.green     = '#c8f9b0' " Green Bubble
+let s:palette.darkgreen = '#abd698' " Darker Green 
 
-let s:palette.visual    = '#ffd8b3' "Orangy, default select color for text
+let s:palette.visual    = '#ffd8b3' " Orangy, default select color for text
 
-let s:palette.darkgreen = '#dbecb6'
 let s:palette.darkblue  = '#000090'
 
 " Editor
