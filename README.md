@@ -1,4 +1,4 @@
-# Highlighter Color Scheme
+# Highlight Color Scheme
 
 A light color scheme which uses background highlighting,
 like one would do with a real highlighter. The scheme does
