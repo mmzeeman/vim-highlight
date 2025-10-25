@@ -92,11 +92,12 @@ execute "hi Number"          "guifg=NONE" "guibg=".s:palette.magenta
 execute "hi Boolean"         "guifg=NONE" "guibg=".s:palette.magenta
 execute "hi Float"           "guifg=NONE" "guibg=".s:palette.magenta
 
-execute "hi Identifier"      "guifg=NONE" "guibg=".s:palette.blue
-execute "hi Function"        "guifg=NONE" "guibg=".s:palette.blue
+execute "hi Identifier"      "guifg=NONE" "guibg=NONE"
+execute "hi Function"        "guifg=NONE" "guibg=NONE"
 
 " Language constructs
-execute "hi Statement"       "guifg=NONE" "guibg=NONE"
+execute "hi Statement"       "gui=NONE" "guifg=NONE" "guibg=NONE"
+
 execute "hi Conditional"     "guifg=NONE" "guibg=NONE"
 execute "hi Repeat"          "guifg=NONE" "guibg=NONE"
 execute "hi Label"           "guifg=NONE" "guibg=NONE"
@@ -106,25 +107,25 @@ execute "hi Keyword"         "guifg=NONE" "guibg=NONE"
 execute "hi Exception"       "guifg=NONE" "guibg=".s:palette.red
 execute "hi Comment"         "guifg=NONE" "guibg=".s:palette.yellow
 
-execute "hi Special"         "guifg=NONE" "guibg=".s:palette.darkgreen
+execute "hi Special"         "guifg=NONE" "guibg=NONE"
 execute "hi SpecialChar"     "guifg=NONE" "guibg=".s:palette.darkgreen
 
-execute "hi Tag"             "guifg=NONE"                "guibg=NONE"
-execute "hi Delimiter"       "guifg=".s:palette.darkblue "guibg=NONE"
-execute "hi SpecialComment"  "guifg=NONE"                "guibg=NONE"
-execute "hi Debug"           "guifg=NONE"                "guibg=NONE"
+execute "hi Tag"             "guifg=NONE" "guibg=NONE"
+execute "hi Delimiter"       "guifg=NONE" "guibg=NONE"
+execute "hi SpecialComment"  "guifg=NONE" "guibg=NONE"
+execute "hi Debug"           "guifg=NONE" "guibg=NONE"
 
 " C like
 execute "hi PreProc"         "guifg=NONE" "guibg=NONE"
 execute "hi Include"         "guifg=NONE" "guibg=NONE"
-execute "hi Define"          "guifg=NONE" "guibg=NONE"
+execute "hi Define"          "guifg=NONE" "guibg=".s:palette.blue
 execute "hi Macro"           "guifg=NONE" "guibg=NONE"
 execute "hi PreCondit"       "guifg=NONE" "guibg=NONE"
 
-execute "hi Type"            "guifg=NONE" "guibg=NONE"
-execute "hi StorageClass"    "guifg=NONE" "guibg=NONE"
-execute "hi Structure"       "guifg=NONE" "guibg=NONE"
-execute "hi Typedef"         "guifg=NONE" "guibg=NONE"
+execute "hi Type"            "guifg=NONE" "guibg=".s:palette.blue
+execute "hi StorageClass"    "guifg=NONE" "guibg=".s:palette.blue
+execute "hi Structure"       "guifg=NONE" "guibg=".s:palette.blue
+execute "hi Typedef"         "guifg=NONE" "guibg=".s:palette.blue
 
 " Diff
 execute "hi DiffAdd"         "guifg=NONE" "guibg=NONE"
@@ -143,4 +144,18 @@ execute "hi SpellBad"        "guifg=NONE" "guibg=NONE"
 execute "hi SpellCap"        "guifg=NONE" "guibg=NONE"
 execute "hi SpellLocal"      "guifg=NONE" "guibg=NONE"
 execute "hi SpellRare"       "guifg=NONE" "guibg=NONE"
+
+" Fixes for commonly used tags
+execute "hi HTMLEndTag"         "guifg=NONE" "guibg=NONE"
+execute "hi HTMLSpecialTagName" "guifg=NONE" "guibg=NONE"
+
+execute "hi ErlangAtom"         "guifg=NONE" "guibg=NONE"
+execute "hi ErlangQuotedAtom"   "guifg=NONE" "guibg=NONE"
+execute "hi ErlangAttribute"    "guifg=NONE" "guibg=".s:palette.blue
+execute "hi erlangRecordDef"    "guifg=NONE" "guibg=".s:palette.blue
+
+hi def link erlangCommentAnnotation Comment
+hi def link erlangCommentAnnotation Comment
+
+execute "hi NERDTreeDirSlash" "guifg=NONE" "guibg=NONE"
 
