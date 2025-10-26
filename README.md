@@ -21,6 +21,9 @@ The colors chosen are inspired by the colors used for notes in
 the excellent free form mindmap tool
 [Scapple](https://www.literatureandlatte.com/scapple/overview).
 
+## Screenshot
+
+<img width="480" height="371" alt="Screenshot 2025-10-26 at 14 15 24" src="https://github.com/user-attachments/assets/8d344040-de5c-4206-962e-b06155c82e7e" />
 
 
 ## Usage
