@@ -155,7 +155,8 @@ execute "hi ErlangAttribute"    "guifg=NONE" "guibg=".s:palette.blue
 execute "hi erlangRecordDef"    "guifg=NONE" "guibg=".s:palette.blue
 
 hi def link erlangCommentAnnotation Comment
-hi def link erlangCommentAnnotation Comment
+hi def link erlangMap               Normal 
+hi def link erlangBitType           Normal 
 
 execute "hi NERDTreeDirSlash" "guifg=NONE" "guibg=NONE"
 
