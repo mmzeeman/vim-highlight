@@ -23,8 +23,17 @@ the excellent free form mindmap tool
 
 ## Screenshot
 
+### `scapple`
+
+Colors from the mindmap program Scapple
+
 <img width="480" height="371" alt="Screenshot 2025-10-26 at 14 15 24" src="https://github.com/user-attachments/assets/8d344040-de5c-4206-962e-b06155c82e7e" />
 
+### `zebra-gentle`
+
+Zebra highlighter colors. Gentle color set.
+
+<img width="481" height="361" alt="Screenshot 2025-12-10 at 23 39 41" src="https://github.com/user-attachments/assets/565f96d9-c5c0-43c3-810d-40d4d4f75ffe" />
 
 ## Usage
 
