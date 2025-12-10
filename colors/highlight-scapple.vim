@@ -158,5 +158,8 @@ hi def link erlangCommentAnnotation Comment
 hi def link erlangMap               Normal 
 hi def link erlangBitType           Normal 
 
+syn keyword erlangCommonAtom ok undefined
+hi def link erlangCommonAtom erlangBoolean
+
 execute "hi NERDTreeDirSlash" "guifg=NONE" "guibg=NONE"
 
