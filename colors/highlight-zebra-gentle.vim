@@ -1,4 +1,4 @@
-" Name: Highlight Scapple Colorscheme 
+" Name: Highlight Zebra Gentle Colorscheme 
 " Author: mmzeeman (on Github)
 " URL: https://github.com/mmzeeman/vim-highlight
 " (see this url for latest release & screenshots)
@@ -15,27 +15,29 @@ set background=light
 
 " This theme depends on termguicolors being set.
 
-" Colors taken from Zebra hightligher mild color set... 
+" Colors taken from Zebra hightligher mild color set from the scans found on
+" https://www.jetpens.com
 
 let s:palette = {}
 
-let s:palette.active    = '#e16500' " Dark orange from selected item in scapple
 let s:palette.bg        = '#fcf8fa' " Paper  
 let s:palette.fg        = '#000000' " Black
 
-let s:palette.magenta   = '#e3ecf6' " MSOB, mild soda blue
-let s:palette.yellow    = '#faf6e4' " MSY, mild sherbet yellow
-let s:palette.red       = '#f3e1f8' " MBP, mild baby ping
-let s:palette.orange    = '#fbe5b7' " MHOR, hold honey orange
-let s:palette.blue      = '#e3ecf6' " MSOB, mild soda blue
-let s:palette.green     = '#eee7c8' " MOL, mild olive
-let s:palette.darkgreen = '#c8c28a' " Darker mild olive (for SpecialChar)
-
+" Color for visual selection and matching parens
 let s:palette.visual    = '#f29a71' " Mild Copper
+
+" Colors taken from the Gentle Zebra highlighter color pack
+let s:palette.magenta   = '#e3ecf6' " MSOB mild soda blue
+let s:palette.yellow    = '#faf6e4' " MSY  mild sherbet yellow
+let s:palette.red       = '#f3e1f8' " MBP  mild baby ping
+let s:palette.orange    = '#fbe5b7' " MHOR hold honey orange
+let s:palette.blue      = '#e3ecf6' " MSOB mild soda blue
+let s:palette.green     = '#eee7c8' " MOL  mild olive
+let s:palette.darkgreen = '#c8c28a' " MOL  mild olive from a more saturated part (for SpecialChar)
 
 " Editor
 execute "hi Normal"       "guifg=".s:palette.fg     "guibg=".s:palette.bg
-execute "hi Cursor"       "guifg=".s:palette.active "guibg=".s:palette.orange
+execute "hi Cursor"       "guifg=".s:palette.fg     "guibg=".s:palette.visual
 execute "hi CursorLine"   "guifg=NONE"              "guibg=NONE"
 execute "hi LineNr"       "guifg=gray"              "guibg=NONE"
 execute "hi CursorLineNR" "guifg=NONE"              "guibg=NONE"
@@ -68,10 +70,10 @@ execute "hi ModeMsg"      "guifg=NONE" "guibg=NONE"
 execute "hi MoreMsg"      "guifg=NONE" "guibg=NONE"
 
 " Visual aid
-execute "hi MatchParen"  "guifg=white" "guibg=".s:palette.active
-execute "hi Visual"      "guifg=NONE"  "guibg=".s:palette.visual
-execute "hi VisualNOS"   "guifg=NONE"  "guibg=".s:palette.visual
-execute "hi NonText"     "guifg=NONE"  "guibg=NONE"
+execute "hi MatchParen"  "guifg=".s:palette.fg "guibg=".s:palette.visual
+execute "hi Visual"      "guifg=NONE"          "guibg=".s:palette.visual
+execute "hi VisualNOS"   "guifg=NONE"          "guibg=".s:palette.visual
+execute "hi NonText"     "guifg=NONE"          "guibg=NONE"
 
 execute "hi Todo"        "guifg=NONE"          "guibg=".s:palette.yellow
 execute "hi Underlined"  "guifg=NONE"          "guibg=NONE"
@@ -142,6 +144,7 @@ execute "hi SpellBad"        "guifg=NONE" "guibg=NONE"
 execute "hi SpellCap"        "guifg=NONE" "guibg=NONE"
 execute "hi SpellLocal"      "guifg=NONE" "guibg=NONE"
 execute "hi SpellRare"       "guifg=NONE" "guibg=NONE"
+
 
 " Fixes for commonly used tags
 execute "hi HTMLEndTag"         "guifg=NONE" "guibg=NONE"
