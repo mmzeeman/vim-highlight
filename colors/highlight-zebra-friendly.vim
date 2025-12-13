@@ -150,17 +150,5 @@ execute "hi SpellRare"       "guifg=NONE" "guibg=NONE"
 execute "hi HTMLEndTag"         "guifg=NONE" "guibg=NONE"
 execute "hi HTMLSpecialTagName" "guifg=NONE" "guibg=NONE"
 
-execute "hi ErlangAtom"         "guifg=NONE" "guibg=NONE"
-execute "hi ErlangQuotedAtom"   "guifg=NONE" "guibg=NONE"
-execute "hi ErlangAttribute"    "guifg=NONE" "guibg=".s:palette.blue
-execute "hi erlangRecordDef"    "guifg=NONE" "guibg=".s:palette.blue
-
-hi def link erlangCommentAnnotation Comment
-hi def link erlangMap               Normal 
-hi def link erlangBitType           Normal 
-
-syn keyword erlangCommonAtom ok undefined
-hi def link erlangCommonAtom erlangBoolean
-
-execute "hi NERDTreeDirSlash" "guifg=NONE" "guibg=NONE"
+execute "hi NERDTreeDirSlash"   "guifg=NONE" "guibg=NONE"
 
