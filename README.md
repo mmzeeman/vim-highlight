@@ -11,21 +11,29 @@ code this way the code ends up looking like paint splatter
 art. By reducing the amount of colors used to more easier to
 recognize separate elements in your code.
 
+| Color   | Meaning                             |
+|---------|-------------------------------------|
+| Magenta | Titles, Numbers, Chars, Booleans    |
+| Yellow  | Comments, todo's, warning messages  |
+| Red     | Error handling, Exceptions          |
+| Orange  | Search results                      |
+| Blue    | Definitions                         |
+| Green   | Strings                             |
+
+
 The theme uses background colors to highlight elements. Color
 themes usually uses forground colors. When you like to use light
 backgrounds, this means you have to use dark colors, which often
 look less attractive. Hence I decided to highlight like one would
-do with a real world highlighter.
+do with a real world highlighters.
+
+## Screenshots
+
+### `scapple`
 
 The colors chosen are inspired by the colors used for notes in
 the excellent free form mindmap tool
 [Scapple](https://www.literatureandlatte.com/scapple/overview).
-
-## Screenshot
-
-### `scapple`
-
-Colors from the mindmap program Scapple
 
 <img width="480" height="371" alt="Screenshot 2025-10-26 at 14 15 24" src="https://github.com/user-attachments/assets/8d344040-de5c-4206-962e-b06155c82e7e" />
 
