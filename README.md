@@ -41,6 +41,20 @@ Zebra highlighter colors. Friendly color set.
 
 <img width="484" height="360" alt="Screenshot 2025-12-13 at 15 15 12" src="https://github.com/user-attachments/assets/811990da-01e3-4733-a51c-5ad677ca2a1b" />
 
+## `stabilo-original`
+
+Colors based on the standard Stabilo Original set.
+
+<img width="485" height="370" alt="Screenshot 2025-12-13 at 21 26 47" src="https://github.com/user-attachments/assets/b1a77650-d5cd-44c5-9d3f-ef22177b50ae" />
+
+
+## `techo`
+
+Highlight colors based on the Hobonici Month Colors.
+
+<img width="485" height="367" alt="Screenshot 2025-12-13 at 21 31 20" src="https://github.com/user-attachments/assets/35403528-038d-442e-9c01-c646483e66d4" />
+
+
 ## Usage
 
 ```
