@@ -35,6 +35,12 @@ Zebra highlighter colors. Gentle color set.
 
 <img width="481" height="361" alt="Screenshot 2025-12-10 at 23 39 41" src="https://github.com/user-attachments/assets/565f96d9-c5c0-43c3-810d-40d4d4f75ffe" />
 
+## `zebra-friendly`
+
+Zebra highlighter colors. Friendly color set.
+
+<img width="484" height="360" alt="Screenshot 2025-12-13 at 15 15 12" src="https://github.com/user-attachments/assets/811990da-01e3-4733-a51c-5ad677ca2a1b" />
+
 ## Usage
 
 ```
