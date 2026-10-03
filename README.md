@@ -59,7 +59,7 @@ Gentle colors from the [Zebra gentle highlighter](https://www.jetpens.com/Zebra-
 
 #### `zebra-friendly`
 
-Friendly colors from the Zebra highlighter range.
+Friendly colors from the [Zebra friendly highlighter](https://www.jetpens.com/Zebra-Mildliner-Double-Sided-Highlighter-Fine-Bold-5-Friendly-Color-Set/pd/25413) range.
 
 <img width="484" height="360" alt="Screenshot 2025-12-13 at 15 15 12" src="https://github.com/user-attachments/assets/811990da-01e3-4733-a51c-5ad677ca2a1b" />
 
