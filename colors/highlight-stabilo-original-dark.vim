@@ -9,7 +9,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name = "highlight-stabilo-dark"
+let g:colors_name = "highlight-stabilo-original-dark"
 
 set background=dark
 
