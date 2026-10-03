@@ -83,9 +83,13 @@ Highlight colors based on the Hobonici Month Colors.
 
 Dark theme based on `scapple` light theme.
 
+<img width="521" height="348" alt="Screenshot 2026-10-03 at 13 53 13" src="https://github.com/user-attachments/assets/ba1ce1f6-b15d-4046-8018-2bc1aec03883" />
+
 #### `stabilo-original-dark`
 
 Dark theme based on `stabilo-original` light theme.
+
+<img width="521" height="348" alt="Screenshot 2026-10-03 at 13 56 38" src="https://github.com/user-attachments/assets/702a403b-66dd-4d5f-87c7-c094ebe5e3af" />
 
 ## Usage
 
