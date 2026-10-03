@@ -65,7 +65,7 @@ Friendly colors from the Zebra highlighter range.
 
 #### `stabilo-original`
 
-Colors based on the standard Stabilo Original set.
+Colors based on the standard [Stabilo Original](https://www.stabilo.com/com/highlighter-stabilo-boss-original/70-24) set. 
 
 <img width="485" height="370" alt="Screenshot 2025-12-13 at 21 26 47" src="https://github.com/user-attachments/assets/b1a77650-d5cd-44c5-9d3f-ef22177b50ae" />
 
