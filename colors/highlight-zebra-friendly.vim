@@ -64,7 +64,7 @@ execute "hi IncSearch"   "guifg=NONE" "guibg=".s:palette.orange
 execute "hi StatusLine"   "guifg=NONE" "guibg=".s:palette.magenta
 execute "hi StatusLineNC" "guifg=NONE" "guibg=".s:palette.magenta
 execute "hi WildMenu"     "guifg=NONE" "guibg=NONE"
-execute "hi Quesion"      "guifg=NONE" "guibg=NONE"
+execute "hi Question"     "guifg=NONE" "guibg=NONE"
 execute "hi Title"        "guifg=NONE" "guibg=".s:palette.magenta
 execute "hi ModeMsg"      "guifg=NONE" "guibg=NONE"
 execute "hi MoreMsg"      "guifg=NONE" "guibg=NONE"
