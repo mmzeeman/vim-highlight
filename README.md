@@ -53,7 +53,7 @@ free-form mindmap tool [Scapple](https://www.literatureandlatte.com/scapple/over
 
 #### `zebra-gentle`
 
-Gentle colors from the Zebra highlighter range.
+Gentle colors from the [Zebra gentle highlighter](https://www.jetpens.com/Zebra-Mildliner-Double-Sided-Highlighter-Fine-Bold-5-Gentle-Color-Set/pd/34333) range.
 
 <img width="481" height="361" alt="Screenshot 2025-12-10 at 23 39 41" src="https://github.com/user-attachments/assets/565f96d9-c5c0-43c3-810d-40d4d4f75ffe" />
 
