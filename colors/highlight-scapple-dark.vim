@@ -1,4 +1,4 @@
-" Name: Highlight Stabilo Dark
+" Name: Highlight Scapple Dark Colorscheme
 " Author: mmzeeman (on Github)
 " URL: https://github.com/mmzeeman/vim-highlight
 " (see this url for latest release & screenshots)
@@ -9,48 +9,48 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name = "highlight-stabilo-original-dark"
+let g:colors_name = "highlight-scapple-dark"
 
 set background=dark
 
 " This theme depends on termguicolors being set.
 
-" Dark variant of stabilo-original. The same reduced color set is used,
-" but as foreground color on a dark background, instead of as a
-" background color behind the text.
+" Dark variant of scapple. The bubble colors are used as foreground
+" colors, with a very slight tone shift of the same hue as background
+" behind the highlighted text. The background is a warm dark brown
+" (the light theme has a yellowish paper color), not black.
 
 let s:palette = {}
 
+let s:palette.active    = '#e16500' " Dark orange from selected item in scapple
 let s:palette.bg        = '#1f1b14' " Warm dark paper
-let s:palette.fg        = '#e6e2e4' " Off white
-let s:palette.gray      = '#6e6a6d' " Line numbers, non-text
+let s:palette.fg        = '#efe9dc' " Warm off white
+let s:palette.gray      = '#7a7466' " Line numbers, non-text
 
-" Colors for visual selection and matching parens (subdued, so text stays readable)
-let s:palette.visual    = '#5c3149' " Dark pink
-let s:palette.bar       = '#2c282e' " Status/tab lines (dark lavender-gray)
-let s:palette.barsel    = '#5c3149' " Selected tab
+" Bubble colors, used as foreground
+let s:palette.magenta   = '#fedbff' " Pink Bubble
+let s:palette.yellow    = '#faedaf' " Yellow Bubble
+let s:palette.red       = '#ffd4d4' " Red Bubble
+let s:palette.orange    = '#ffc78a' " Orange
+let s:palette.blue      = '#c8ebfe' " Blue Bubble
+let s:palette.green     = '#c8f9b0' " Green Bubble
+let s:palette.darkgreen = '#abd698' " Darker Green
 
-" Same colors as stabilo-original, now used as foreground
-let s:palette.magenta   = '#dcb5f8' " Lavender
-let s:palette.yellow    = '#eaff9c' " Yellow
-let s:palette.red       = '#fdcfbf' " Red
-let s:palette.orange    = '#fed789' " Orange
-let s:palette.blue      = '#87dee4' " Blue
-let s:palette.green     = '#c9f6c3' " Green
-let s:palette.darkgreen = '#82ed9c' " Green from a more saturated part (for SpecialChar)
+" Very slight background tone shifts (about 12% of the bubble color on the bg)
+let s:palette.magenta_bg   = '#3a3130'
+let s:palette.yellow_bg    = '#393427'
+let s:palette.red_bg       = '#3a312b'
+let s:palette.blue_bg      = '#333430'
+let s:palette.green_bg     = '#333627'
+let s:palette.darkgreen_bg = '#303124'
+let s:palette.orange_bg    = '#45341f'
 
-" Very subtle background tone shifts for highlighted items
-let s:palette.magenta_bg   = '#342b31'
-let s:palette.yellow_bg    = '#34301f'
-let s:palette.red_bg       = '#372f2b'
-let s:palette.orange_bg    = '#3c2f1f'
-let s:palette.blue_bg      = '#2f3334'
-let s:palette.green_bg     = '#2f342a'
-let s:palette.darkgreen_bg = '#2d3328'
+let s:palette.visual    = '#5a3a1c' " Dark orangy selection
+let s:palette.bar       = '#2d271d' " Status/tab lines
 
 " Editor
 execute "hi Normal"       "guifg=".s:palette.fg     "guibg=".s:palette.bg
-execute "hi Cursor"       "guifg=".s:palette.bg     "guibg=".s:palette.magenta
+execute "hi Cursor"       "guifg=".s:palette.bg     "guibg=".s:palette.active
 execute "hi CursorLine"   "guifg=NONE"              "guibg=NONE"
 execute "hi LineNr"       "guifg=".s:palette.gray   "guibg=NONE"
 execute "hi CursorLineNR" "guifg=NONE"              "guibg=NONE"
@@ -66,12 +66,12 @@ execute "hi VertSplit"   "guifg=".s:palette.magenta "guibg=".s:palette.bar
 execute "hi ColorColumn" "guifg=NONE"               "guibg=".s:palette.bar
 execute "hi TabLine"     "guifg=".s:palette.magenta "guibg=".s:palette.bar
 execute "hi TabLineFill" "guifg=NONE"               "guibg=".s:palette.bar
-execute "hi TabLineSel"  "guifg=".s:palette.fg      "guibg=".s:palette.barsel
+execute "hi TabLineSel"  "guifg=".s:palette.fg      "guibg=".s:palette.visual
 
 " File Navigation / Searching
-execute "hi Directory"   "guifg=NONE"               "guibg=NONE"
 execute "hi Search"      "guifg=".s:palette.orange  "guibg=".s:palette.orange_bg
 execute "hi IncSearch"   "guifg=".s:palette.orange  "guibg=".s:palette.orange_bg "gui=reverse"
+execute "hi Directory"   "guifg=NONE" "guibg=NONE"
 
 " Prompt/Status
 execute "hi StatusLine"   "guifg=".s:palette.magenta "guibg=".s:palette.bar
@@ -83,7 +83,7 @@ execute "hi ModeMsg"      "guifg=NONE" "guibg=NONE"
 execute "hi MoreMsg"      "guifg=NONE" "guibg=NONE"
 
 " Visual aid
-execute "hi MatchParen"  "guifg=".s:palette.fg "guibg=".s:palette.visual
+execute "hi MatchParen"  "guifg=".s:palette.fg "guibg=".s:palette.active
 execute "hi Visual"      "guifg=NONE"          "guibg=".s:palette.visual
 execute "hi VisualNOS"   "guifg=NONE"          "guibg=".s:palette.visual
 execute "hi NonText"     "guifg=".s:palette.gray "guibg=NONE"
@@ -97,13 +97,13 @@ execute "hi Ignore"      "guifg=NONE"              "guibg=NONE"
 execute "hi SpecialKey"  "guifg=".s:palette.gray   "guibg=NONE"
 
 " Variable types
-execute "hi Constant"        "guifg=NONE"                "guibg=NONE"
-execute "hi String"          "guifg=".s:palette.green    "guibg=".s:palette.green_bg
-execute "hi StringDelimiter" "guifg=".s:palette.green    "guibg=".s:palette.green_bg
-execute "hi Character"       "guifg=".s:palette.magenta  "guibg=".s:palette.magenta_bg
-execute "hi Number"          "guifg=".s:palette.magenta  "guibg=".s:palette.magenta_bg
-execute "hi Boolean"         "guifg=".s:palette.magenta  "guibg=".s:palette.magenta_bg
-execute "hi Float"           "guifg=".s:palette.magenta  "guibg=".s:palette.magenta_bg
+execute "hi Constant"        "guifg=NONE" "guibg=NONE"
+execute "hi String"          "guifg=".s:palette.green   "guibg=".s:palette.green_bg
+execute "hi StringDelimiter" "guifg=".s:palette.green   "guibg=".s:palette.green_bg
+execute "hi Character"       "guifg=".s:palette.magenta "guibg=".s:palette.magenta_bg
+execute "hi Number"          "guifg=".s:palette.magenta "guibg=".s:palette.magenta_bg
+execute "hi Boolean"         "guifg=".s:palette.magenta "guibg=".s:palette.magenta_bg
+execute "hi Float"           "guifg=".s:palette.magenta "guibg=".s:palette.magenta_bg
 
 execute "hi Identifier"      "guifg=NONE" "guibg=NONE"
 execute "hi Function"        "guifg=NONE" "guibg=NONE"
@@ -163,3 +163,4 @@ execute "hi HTMLEndTag"         "guifg=NONE" "guibg=NONE"
 execute "hi HTMLSpecialTagName" "guifg=NONE" "guibg=NONE"
 
 execute "hi NERDTreeDirSlash"   "guifg=NONE" "guibg=NONE"
+
